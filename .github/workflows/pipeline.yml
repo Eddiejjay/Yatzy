@@ -24,9 +24,7 @@ jobs:
           cd frontend
           npm run lint 
       - name: build
-        run: |
-          cd frontend
-          npm run build 
+        run:  "npm run build:frontend"
       - name: e2e tests
         uses: cypress-io/github-action@v2
         with:
