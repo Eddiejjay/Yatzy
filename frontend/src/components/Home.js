@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <Text>Wanna roll some dices? </Text>
-      <Text> Please log in or create a new user</Text>
+      <Text> Please logggg in or create a new user</Text>
       <StyledButton onClick = {clicked}><Text>Login</Text></StyledButton>
       <StyledButton onClick = {clicked2}><Text>Create user</Text></StyledButton>
     </HomeContainer>
