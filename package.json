@@ -9,8 +9,7 @@
     "dev": "nodemon index.js",
     "cypress:open": "cypress open",
     "test:e2e": "cypress run",
-    "build:frontend": "cd frontend && npm run build",
-    "heroku-postbuild": "npm run build:frontend"
+    "build:frontend": "cd frontend && npm run build"
   },
   "author": "Eero Mäki-Kokkila",
   "license": "MIT",
