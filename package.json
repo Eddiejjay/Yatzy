@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "cypress:open": "cypress open",
+    "test:e2e": "cypress run"
   },
   "author": "Eero Mäki-Kokkila",
   "license": "MIT",
@@ -22,6 +24,7 @@
     "socket.io": "^4.1.2"
   },
   "devDependencies": {
+    "cypress": "^9.1.1",
     "nodemon": "^2.0.7"
   }
 }
