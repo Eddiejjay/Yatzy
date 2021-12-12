@@ -8,8 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "cypress:open": "cypress open",
-    "test:e2e": "cypress run",
-    "build:frontend": "cd frontend && npm run build"
+    "test:e2e": "cypress run"
   },
   "author": "Eero Mäki-Kokkila",
   "license": "MIT",
