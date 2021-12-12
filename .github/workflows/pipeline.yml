@@ -33,3 +33,10 @@ jobs:
          command: npm run test:e2e
          start: npm start
          wait-on: http://localhost:3003
+      - name: heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        if: ${{ github.event_name == 'push' && !contains(join(toJson(github.event.commits.*.message)), '#skip') }}
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "yatzyhazymazy"
+          heroku_email: "eerojmk@gmail.com"
