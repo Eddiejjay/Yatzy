@@ -122,6 +122,10 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFind
   console.log('Connection failed', error.message)
 })
 
+app.get('/health', (req, res) => {
+  res.send('ok')
+})
+
 app.get('/', (req, res) => {
   res.send('<h1>Hello Welcome to play Yatzy </h1>')
 })
