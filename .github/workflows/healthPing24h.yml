@@ -1,7 +1,7 @@
 name: Periodical Health Test
 on:
   schedule:
-    - cron:  0 */24 * * *
+    - cron: 5 8 * * 0
 
 jobs:
   simple_deployment_pipeline:
